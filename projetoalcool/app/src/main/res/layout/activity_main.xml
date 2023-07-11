@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Hello World!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="178dp"
+        android:text="Álcool ou Gasolina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/edGasolina"
+        android:layout_width="115dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="108dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="32dp"
+        android:text="Preço Gasolina"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="65dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="97dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="32dp"
+        android:text="Preço Álcool"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="275dp" />
+
+    <Button
+        android:id="@+id/btVerificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="163dp"
+        android:text="VERIFICAR"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/purple_200"
+        android:textColorHint="@color/purple_200"
+        android:textColorLink="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAlcool" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="193dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="193dp"
+        android:text="Resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btVerificar" />
+
+    <EditText
+        android:id="@+id/edAlcool"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/edGasolina"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
