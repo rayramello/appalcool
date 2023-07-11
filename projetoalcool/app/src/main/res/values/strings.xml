@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">projetoalcool</string>
+    <string name="button">btVerificar</string>
 </resources>

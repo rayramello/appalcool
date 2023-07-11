@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         btVerificar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View btVerificar) {
                 gasolina = Float.parseFloat(edGasolina.getText().toString());
                 alcool = Float.parseFloat(edAlcool.getText().toString());
 

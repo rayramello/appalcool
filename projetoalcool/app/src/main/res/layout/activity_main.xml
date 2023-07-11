@@ -64,6 +64,7 @@
         android:layout_marginStart="163dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="163dp"
+        android:onClick="@string/button"
         android:text="VERIFICAR"
         android:textColor="@color/black"
         android:textColorHighlight="@color/purple_200"
